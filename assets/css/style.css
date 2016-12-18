@@ -1,0 +1,23 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body{
+  background-color: #121212;
+  font-family: courier,sans-serif;
+
+}
+p {
+  display: flex;
+  position: relative;
+  font-size: 2em;
+  color: #ffffff;
+  background-color: #333333;
+  width: 60%;
+  left: 20%;
+  justify-content: center;
+  text-align: justify;
+  padding: 10px;
+}
