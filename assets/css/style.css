@@ -5,10 +5,40 @@ html,body{
 }
 
 body{
-  /*background-color: #121212;*/
+  background-color: #222222;
   font-family: courier,sans-serif;
 
 }
+
+.topheader {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+}
+
+#hbanner {
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 440px;
+  width: 100%;
+
+}
+
+
+#hbanner2 {
+  display: block;
+  position: relative;
+  top: 140px;
+  left: 40px;
+
+
+
+}
+
+
 #menu {
   display: none;
 
@@ -21,11 +51,11 @@ body{
   display: block;
   position: fixed;
   top: 0px;
-  left: 0;
+  left: 10px;
   height: 50px;
   width: 55px;
-  color: #cc0000;
-  font-size: 3em;
+  color: #ffffff;
+  font-size: 7em;
   /*background-color: #cc0000;*/
   text-align: center;
   margin: 0 ;
@@ -49,8 +79,13 @@ body{
 #menu:checked + label {
   top: 380px;
 
+}
+
+#menu:checked + label:hover{
+  color: #333333;
 
 }
+
 
 label {
   z-index:99;
@@ -69,17 +104,18 @@ label {
 }
 
 
+
 #navmain {
   position: fixed;
-  background-color: #cc0000;
+  background-color: greenyellow;
   top: -600px;
   left: 0;
-  width: 350px;
-  height: 400px;
+  width: 370px;
+  height: 450px;
   transition:top 0.5s;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  z-index: 9;
 
 }
 
@@ -90,8 +126,7 @@ label {
   height: 100%;
   margin: 0;
   padding: 2px;
-  justify-content: space-between;
-
+  justify-content: space-around;
 }
 
 #navmain ul li {
@@ -107,20 +142,20 @@ label {
   height: 100%;
   color: white;
   text-decoration: none;
-  padding: 3px;
+  padding: 2px;
   font-size: 2em;
 
 }
 
 #navmain a:hover {
-  /*color: #333333;*/
-  font-size: 3em;
+  color: #333333;
+  font-size: 2em;
+  font-weight: bold;
+  opacity: 0.5;
 
 }
 
-
-
-p {
+#pmain {
   display: flex;
   position: relative;
   top: 300px;
@@ -128,8 +163,9 @@ p {
   color: #ffffff;
   background-color: #333333;
   width: 60%;
-  left: 390px;
+  left: 370px;
   justify-content: center;
   text-align: justify;
   padding: 10px;
+  margin: 0;
 }
