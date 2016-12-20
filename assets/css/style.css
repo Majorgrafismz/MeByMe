@@ -54,15 +54,16 @@ body{
   display: block;
   position: fixed;
   top: 0px;
-  left: 10px;
+  left: 0px;
   height: 50px;
   width: 55px;
   color: red;
   font-size: 7em;
-  /*background-color: #cc0000;*/
+background-color: #ffffff;
   text-align: center;
   margin: 0 ;
-  padding-top: 10px;
+  padding: 10px;
+
   transition:top 1s;
 
 }
@@ -73,7 +74,7 @@ body{
   content:"\f00d";
   color: black;
   font-size: 3em;
-  /*background-color: #cc0000;*/
+  background-color: transparent;
   top: 380px;
 
 }
@@ -207,18 +208,21 @@ p{
   color: red;
 }
 
-#blank {
+#blank a{
   color: #0066ff;
-}
+  text-decoration: none;
+}  
 
 #pmspan a {
   text-decoration: none;
   color: yellow;
 }
 
-#tabmond {
-  display: flex;
-  justify-content: center;
+.tabmond {
+  display: inline-block;
+  position: relative;
+
+  margin: 20px;
 }
 
 .logo {
