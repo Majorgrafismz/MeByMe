@@ -193,7 +193,7 @@ label {
   text-decoration: none;
   padding: 5px;
   font-size: 2em;
-  font-weight: bold;
+  /*font-weight: bold;*/
 
 }
 
@@ -205,7 +205,7 @@ label {
   text-decoration: none;
   padding: 5px;
   font-size: 2em;
-  font-weight: bold;
+  /*font-weight: bold;*/
 
 }
 
@@ -213,7 +213,7 @@ label {
 #navmainndx a:hover {
   color: black;
   font-size: 2em;
-  font-weight: bold;
+  /*font-weight: bold;*/
   /*opacity: 0.5;*/
 
 }
@@ -222,21 +222,20 @@ label {
 #navmainabout a:hover {
   color: black;
   font-size: 2em;
-  font-weight: bold;
+  /*font-weight: bold;*/
 
 }
 
 .main {
-  display: flex;
-  top: 300px;
-  left: 0;
-  width: 100%;
+  /*display: flex;
+  position: relative;*/
   height: 100%;
+  width: 100%;
   justify-content: center;
 }
 
 #mainsect {
-  display: block;
+  display: flex;
   position: relative;
   top: 300px;
   background-color: white;
@@ -271,7 +270,7 @@ label {
   display: block;
   position: relative;
   width: 25%;
-  padding: 10px
+
   margin: 10px;
   /*border: 20px solid black;*/
 
@@ -318,19 +317,19 @@ p{
   left: 0;
   width: 370px;
   height: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-top: 20px solid black;
   border-right: 20px solid black;
-  /*border-bottom: 10px solid black;*/
   background-color: white;
   justify-content: space-around;
 
 }
 
 #lalogo {
-  display: block;
+  display: inline-block;
   position: relative;
+  top: 140px;
+  height: 49px;
+  width: 111px;
 
 }
 
