@@ -169,15 +169,8 @@ label {
   background-color: gray;
 }
 
-#navmain1dx a:hover, #navmainabout a:hover {
+#navmain1dx a:hover, #navmainabout a:hover, #navmaincv a:hover {
   color: black;
-  font-size: 2em;
-
-}
-
-
-#navmaincv a:hover {
-  color: red;
   font-size: 2em;
 
 }
