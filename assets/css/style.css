@@ -1,4 +1,4 @@
-html, body{
+html, body {
   margin: 0px;
   padding: 0px;
 
@@ -187,7 +187,7 @@ label {
 #mainsect {
   display: flex;
   position: relative;
-  top: 300px;
+  top: 280px;
   background-color: white;
   width: 100%;
   left: 0;
@@ -202,17 +202,17 @@ label {
   font-size: 1.5em;
   color: gray;
   /*backgroun-color: white;*/
-  width: 60%;
+  width: 66%;
   height: 100%;
-  left: 370px;
+  left: 350px;
   padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  /*padding-left: 30px;
+  padding-right: 30px;*/
   margin: 0;
   border-left: 20px solid black;
   text-align: justify;
 }
-#divmaincv, #tabmond {
+#divmaincv {
   display: block;
   position: relative;
   top: 0;
@@ -223,25 +223,25 @@ label {
 /*---------menu du milieu page "j'ai fait"*/
 .navmid {
   position: fixed;
-  top: 300px;
+  top: 280px;
   left: 0;
-  background-color: white;
-  width: 60%;
-  height: 29%;
+  background-color: transparent;
+  width: 66%;
+  height: 46%;
   border-left: 20px solid black;
+  z-index: 7;
 
 }
 
 #navmidwrk {
   width: 100%;
-  left: 370px;
+  left: 350px;
 
 }
 
 /* -------pour suprimer l'espace entre les tabs du menu */
 #navmidwrk ul {
   font-size: 0;
-
   margin: auto;
   padding-top: 3%;
 
@@ -251,7 +251,7 @@ label {
   display: inline-block;
   cursor: pointer;
   font-size: 40px;
-  width: 30%;
+  width: 33%;
   text-align: center;
 }
 /* ---------style de menu */
@@ -277,8 +277,19 @@ label {
 
 }
 
+#tabmond {
+  display: block;
+  position: relative;
+  top: 0;
+  /*width: 110%;*/
+  text-align: center;
+  padding: 0;
+
+}
+
+
 #pwrk{
-  top: 520px;
+  top: 460px;
 
 }
 
@@ -289,19 +300,26 @@ label {
   margin: auto;
 
 }
-
+/*------centrer les titres*/
 div h1, div h3 {
   text-align: center;
 }
 
+#jesuis {
+  margin-left: 100px;
+  text-align: justify;
+}
 
 p {
   margin: 15px;
-  padding: 0;
+  padding: 10px;
 }
- p a, div a {
+
+ p a, div a, h3 a {
    text-decoration: none;
  }
+
+
 
 
 .redword, #graal {
@@ -320,9 +338,16 @@ p {
 
 .blackbigword {
   color: black;
-  font-size: 4em;
+  font-size: 3em;
 
 }
+
+.blackword {
+  color: black;
+  font-size: 1.5em;
+
+}
+
 
 /* -----------bas gauche*/
 .bagosh {
@@ -355,16 +380,16 @@ p {
 .right {
   display: flex;
   position: fixed;
-  top: 300px;
+  top: 280px;
   right: 0px;
-  width: 40px;
+  width: 60px;
   height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: white;
   border-left: 20px solid black;
   justify-content: space-around;
-
+  z-index: 9;
 }
 
 #right1dx, #rightwrk {
@@ -378,5 +403,3 @@ p {
 #rightcv {
   background-color: gray;
 }
-
-#rightwrk
