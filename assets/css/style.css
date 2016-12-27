@@ -39,7 +39,7 @@ flex-direction: column;
 #hbanner2 {
   display: block;
   position: relative;
-  top: 20px;
+  top: 50px;
   left: 170px;
   margin: auto;
 }
@@ -59,10 +59,10 @@ flex-direction: column;
   position: fixed;
   top: 0px;
   left: 0px;
-  height: 50px;
-  width: 55px;
-  color: lightgray;
-  font-size: 7em;
+  height: 100px;
+  width: 100px;
+  color: darkgray;
+  font-size: 6em;
   background-color: #ffffff;
   text-align: center;
   margin: 0 ;
@@ -237,6 +237,7 @@ label {
   width: 66%;
   height: 46%;
   border-left: 20px solid black;
+  padding-left: 40px;
   z-index: 7;
 
 }
@@ -253,24 +254,27 @@ label {
   left: 350px;
   width: 100%;
   height: 37%;
+  margin: auto;
+
 }
 
 /* -------pour suprimer l'espace entre les tabs du menu */
 
 #navmidwrk ul, #navmidmd ul {
   font-size: 0;
-  margin: auto;
-  padding-top: 3%;
-
+  padding: 5%;
 }
 
 #navmidwrk  ul  li, #navmidmd  ul  li {
   display: inline-block;
   cursor: pointer;
   font-size: 40px;
-  width: 33%;
+  width: 35%;
   text-align: center;
+  /*padding-bottom: 200px;*/
 }
+
+
 
 /* ---------style de menu */
 
@@ -280,9 +284,9 @@ label {
   height: 40px;
   color: black;
   /*background-color: red;*/
-  /*text-align: center;*/
+  text-align: center;
   text-decoration: none;
-  padding-bottom: 10px;
+  padding-bottom: 240px;
 }
 
 /*------- style du menu on hover */
@@ -297,7 +301,7 @@ label {
 }
 
 #navmidmd a:hover {
-  color: darkgray;
+  color: red;
 }
 
 #tabmond {
@@ -375,10 +379,14 @@ p {
   font-size: 1.5em;
 }
 
-.bigwhiteword {
+.bigwhiteword,.bigwhiteword a {
   color: white;
   font-size: 2em;
   text-decoration: none;
+}
+
+.bigwhiteword a:hover {
+  color: darkgray;
 }
 
 /* -----------bas gauche*/
@@ -405,7 +413,7 @@ p {
 }
 
 #bgmd {
-  background-color: yellow;
+  background-color: red;
 }
 
 /*------------coté droit*/
@@ -425,7 +433,7 @@ p {
   z-index: 9;
 }
 
-#right1dx, #rightwrk {
+#right1dx, #rightwrk, #rightmd {
   background-color: white;
 }
 
@@ -436,7 +444,7 @@ p {
 #rightcv {
   background-color: gray;
 }
-
+/*
 #rightmd {
   background-color: #0066ff;
-}
+}*/
