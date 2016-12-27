@@ -10,6 +10,9 @@ body {
 
 }
 
+/*-------declaration et positionnement du header*/
+
+
 .topheader {
   display: flex;
 flex-direction: column;
@@ -21,7 +24,7 @@ flex-direction: column;
   background-color: #ffffff;
   border-bottom: 20px solid black;
   justify-content: center;
-  z-index: 8;
+  z-index: 6;
 
 }
 
@@ -41,14 +44,15 @@ flex-direction: column;
   margin: auto;
 }
 
-
+/*------- disparition de la checkbox*/
 #menu {
   display: none;
 
 }
 
+/*-------declaration du lien ouverture menu retractable*/
+
 #menu + label::before {
-  /*content:"OPEN";*/
   content:"\f0c9 ";
   font-family: "FontAwesome";
   display: block;
@@ -67,10 +71,9 @@ flex-direction: column;
   transition:top 1s;
 
 }
-
+/*-------declaration du lien fermeture du menu retractable*/
 
 #menu:checked + label::before {
-  /*content:"CLOSE";*/
   content:"\f00d";
   color: lightgray;
   font-size: 3em;
@@ -78,11 +81,9 @@ flex-direction: column;
   top: 380px;
 
 }
-
-
+/*-------declaration et positionnement du lien de fermeture du menu quand la checkbox est checked*/
 #menu:checked + label {
   top: 380px;
-
 }
 
 label {
@@ -92,13 +93,15 @@ label {
   top: 0;
   cursor: pointer;
   transition:top 1s;
-
 }
+
+/*-------declaration et positionnement du menu quand la checkbox est checked*/
 
 #menu:checked ~ .navmain {
   top: 0;
-
 }
+
+/*-------declaration et positionnement du menu AVANT la checkbox est checked*/
 
 .navmain {
   position: fixed;
@@ -141,6 +144,9 @@ label {
 
 }
 
+/*-------declaration des couleurs du background menu retractable*/
+
+
 #navmain1dx {
   background-color: red;
 
@@ -159,10 +165,14 @@ label {
     background-color: black;
 }
 
+
+/*-------declaration des couleurs de liens menu retractable*/
+
 #navmainwrk a {
   color: darkgray;
 }
 
+/*-------declaration des couleurs de liens menu retractable lorsque l'on passe dessus*/
 
 #navmain1dx a:hover, #navmainabout a:hover, #navmaincv a:hover {
   color: black;
@@ -175,12 +185,13 @@ label {
   font-size: 2em;
 }
 
+/*-------declaration et positionnement du milieu de le page */
 
 .main {
-  /*display: flex;
-  position: relative;*/
   height: 100%;
   width: 100%;
+  /*display: flex;
+  position: relative;*/
   /*justify-content: center;*/
 }
 
@@ -206,8 +217,6 @@ label {
   height: 100%;
   left: 350px;
   padding-top: 20px;
-  /*padding-left: 30px;
-  padding-right: 30px;*/
   margin: 0;
   border-left: 20px solid black;
   text-align: justify;
@@ -225,7 +234,6 @@ label {
   position: fixed;
   top: 280px;
   left: 0;
-  background-color: transparent;
   width: 66%;
   height: 46%;
   border-left: 20px solid black;
@@ -234,28 +242,39 @@ label {
 }
 
 #navmidwrk {
-  width: 100%;
   left: 350px;
+  width: 100%;
+}
 
+/*---------menu du milieu page "j'ai fait / mémé dozzit"*/
+
+#navmidmd {
+  top: 0;
+  left: 350px;
+  width: 100%;
+  height: 77%;
 }
 
 /* -------pour suprimer l'espace entre les tabs du menu */
-#navmidwrk ul {
+
+#navmidwrk ul, #navmidmd ul {
   font-size: 0;
   margin: auto;
   padding-top: 3%;
 
 }
 
-#navmidwrk  ul  li {
+#navmidwrk  ul  li, #navmidmd  ul  li {
   display: inline-block;
   cursor: pointer;
   font-size: 40px;
   width: 33%;
   text-align: center;
 }
+
 /* ---------style de menu */
-#navmidwrk a {
+
+#navmidwrk a, #navmidmd a {
   display: block;
   width: 100%;
   height: 40px;
@@ -264,9 +283,10 @@ label {
   /*text-align: center;*/
   text-decoration: none;
   padding-bottom: 10px;
-
 }
+
 /*------- style du menu on hover */
+
 #navmidwrk:hover {
   background-color: red;
   border-bottom: 20px solid black;
@@ -274,23 +294,33 @@ label {
 
 #navmidwrk a:hover {
   color: white;
+}
 
+#navmidmd a:hover {
+  color: darkgray;
 }
 
 #tabmond {
   display: block;
   position: relative;
   top: 0;
-  /*width: 110%;*/
   text-align: center;
   padding: 0;
-
 }
 
 
 #pwrk{
   top: 460px;
+}
 
+#pmd{
+  top: 280px;
+  width: 69%;
+  /*margin: 15px;*/
+  padding: 20px;
+  border: 0;
+  text-align: center;
+  background-color: black;
 }
 
 .lafoto {
@@ -301,6 +331,7 @@ label {
 
 }
 /*------centrer les titres*/
+
 div h1, div h3 {
   text-align: center;
 }
@@ -319,8 +350,7 @@ p {
    text-decoration: none;
  }
 
-
-
+/*declaration des spans*/
 
 .redword, #graal {
   color: red;
@@ -328,7 +358,6 @@ p {
 
 .blank a, .blueword, #webwhy {
   color: #0066ff;
-
 }
 
 #pmspan a, .yelloword {
@@ -339,17 +368,20 @@ p {
 .blackbigword {
   color: black;
   font-size: 3em;
-
 }
 
 .blackword {
   color: black;
   font-size: 1.5em;
-
 }
 
+.bigwhiteword {
+  color: white;
+  font-size: 2em;
+}
 
 /* -----------bas gauche*/
+
 .bagosh {
   display: flex;
   position: fixed;
@@ -361,7 +393,6 @@ p {
   border-right: 20px solid black;
   background-color: white;
   justify-content: space-around;
-
 }
 
 #lalogo {
@@ -370,13 +401,14 @@ p {
   top: 140px;
   height: 49px;
   width: 111px;
-
 }
 
-/*#bgwrk {
+#bgmd {
   background-color: yellow;
-}*/
+}
+
 /*------------coté droit*/
+
 .right {
   display: flex;
   position: fixed;
@@ -386,7 +418,7 @@ p {
   height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: white;
+  /*background-color: white;*/
   border-left: 20px solid black;
   justify-content: space-around;
   z-index: 9;
@@ -402,4 +434,8 @@ p {
 
 #rightcv {
   background-color: gray;
+}
+
+#rightmd {
+  background-color: #0066ff;
 }
