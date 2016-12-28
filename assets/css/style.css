@@ -113,7 +113,6 @@ label {
   z-index: 9;
   transition:top 0.5s;
   border-right: 20px solid black;
-
 }
 
 .navmain ul {
@@ -130,7 +129,6 @@ label {
   display: block;
   width: 100%;
   text-align: center;
-
 }
 
 .navmain ul li a {
@@ -141,7 +139,6 @@ label {
   text-decoration: none;
   padding: 5px;
   font-size: 2em;
-
 }
 
 /*-------declaration des couleurs du background menu retractable*/
@@ -149,12 +146,10 @@ label {
 
 #navmain1dx {
   background-color: red;
-
 }
 
 #navmainabout {
   background-color: #0066ff;
-
 }
 
 #navmaincv {
@@ -165,6 +160,10 @@ label {
     background-color: black;
 }
 
+#navmainhob {
+    background-color: yellow;
+}
+
 
 /*-------declaration des couleurs de liens menu retractable*/
 
@@ -172,16 +171,24 @@ label {
   color: darkgray;
 }
 
+#navmainhob a {
+  color: black;
+}
+
 /*-------declaration des couleurs de liens menu retractable lorsque l'on passe dessus*/
 
 #navmain1dx a:hover, #navmainabout a:hover, #navmaincv a:hover {
   color: black;
   font-size: 2em;
-
 }
 
 #navmainwrk a:hover {
   color: white;
+  font-size: 2em;
+}
+
+#navmainhob a:hover {
+  color: #0066ff;
   font-size: 2em;
 }
 
@@ -203,7 +210,6 @@ label {
   width: 100%;
   left: 0;
   margin: 0;
-
 }
 
 .divmain {
@@ -247,7 +253,7 @@ label {
   width: 100%;
 }
 
-/*---------menu du milieu page "j'ai fait / mémé dozzit"*/
+/*---------menu du milieu page "work / mémé dozzit / lawd"*/
 
 #navmidmd {
   top: 0;
@@ -258,7 +264,7 @@ label {
 
 }
 
-/* -------pour suprimer l'espace entre les tabs du menu */
+/* -------pour suprimer l'espace entre les tabs du menu mid page work et md/lawd*/
 
 #navmidwrk ul, #navmidmd ul {
   font-size: 0;
@@ -274,9 +280,7 @@ label {
   /*padding-bottom: 200px;*/
 }
 
-
-
-/* ---------style de menu */
+/* ---------style de menu mid */
 
 #navmidwrk a, #navmidmd a {
   display: block;
@@ -289,7 +293,7 @@ label {
   padding-bottom: 240px;
 }
 
-/*------- style du menu on hover */
+/*------- style du menu mid on hover */
 
 #navmidwrk:hover {
   background-color: red;
@@ -312,9 +316,9 @@ label {
   padding: 0;
 }
 
-
+/*------------paragraphe "page work"*/
 #pwrk{
-  top: 460px;
+  top: 410px;
 }
 
 #pmd{
@@ -341,7 +345,7 @@ div h1, div h3 {
 }
 
 #jesuis {
-  margin-left: 100px;
+  margin-right: 100px;
   text-align: justify;
 }
 
@@ -416,6 +420,10 @@ p {
   background-color: red;
 }
 
+#bghob {
+  background-color: black;
+}
+
 /*------------coté droit*/
 
 .right {
@@ -444,7 +452,7 @@ p {
 #rightcv {
   background-color: gray;
 }
-/*
-#rightmd {
+
+#righthob {
   background-color: #0066ff;
-}*/
+}
