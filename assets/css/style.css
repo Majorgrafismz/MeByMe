@@ -164,6 +164,9 @@ label {
     background-color: yellow;
 }
 
+#navmaincont {
+    background-color: white;
+}
 
 /*-------declaration des couleurs de liens menu retractable*/
 
@@ -171,7 +174,7 @@ label {
   color: darkgray;
 }
 
-#navmainhob a {
+#navmainhob a,#navmaincont a {
   color: black;
 }
 
@@ -187,7 +190,7 @@ label {
   font-size: 2em;
 }
 
-#navmainhob a:hover {
+#navmainhob a:hover, #navmaincont a:hover {
   color: #0066ff;
   font-size: 2em;
 }
@@ -197,9 +200,6 @@ label {
 .main {
   height: 100%;
   width: 100%;
-  /*display: flex;
-  position: relative;*/
-  /*justify-content: center;*/
 }
 
 #mainsect {
@@ -227,6 +227,7 @@ label {
   border-left: 20px solid black;
   text-align: justify;
 }
+
 #divmaincv {
   display: block;
   position: relative;
@@ -234,7 +235,9 @@ label {
   text-align: center;
   padding: 0;
 }
+
 /*---------menu du milieu page "j'ai fait"*/
+
 .navmid {
   position: fixed;
   top: 280px;
@@ -290,6 +293,17 @@ label {
   padding-bottom: 240px;
 }
 
+#navmidmd a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  color: black;
+  /*background-color: red;*/
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 70px;
+}
+
 /*------- style du menu mid on hover */
 
 #navmidwrk:hover {
@@ -335,6 +349,12 @@ label {
   margin: auto;
 }
 
+.container-fluid {
+  margin-bottom: 70px;
+  border-bottom: 2px dotted darkgray;
+  padding-bottom: 10px;
+}
+
 /*------centrer les titres*/
 
 div h1, div h3 {
@@ -342,7 +362,7 @@ div h1, div h3 {
 }
 
 #jesuis {
-  margin-left: 250px;
+  margin-left: 240px;
   text-align: justify;
 }
 
@@ -354,6 +374,12 @@ p {
  p a, div a, h3 a {
   text-decoration: none;
 }
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
 
 /*declaration des classes span*/
 
@@ -389,7 +415,26 @@ p {
 }
 
 .bigwhiteword a:hover {
-  color: darkgray;
+  color: red;
+}
+
+.ikonred {
+  font-size: 5em;
+  color: red;
+}
+
+.ikonblu {
+  font-size: 5em;
+  color: #0066ff;
+}
+
+.contblueword {
+  font-size: 2em;
+  color: #0066ff;
+}
+
+#contact{
+  margin-left: 240px;
 }
 
 /* -----------bas gauche*/
@@ -423,6 +468,10 @@ p {
   background-color: black;
 }
 
+#bgcont {
+background-color: #0066ff;
+}
+
 /*------------coté droit*/
 
 .right {
@@ -454,4 +503,8 @@ p {
 
 #righthob {
   background-color: #0066ff;
+}
+
+#rightcont {
+  background-color: red;
 }
