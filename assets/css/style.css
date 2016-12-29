@@ -361,7 +361,7 @@ p {
   color: red;
 }
 
-.blank a, .blueword, {
+.blank a, .blueword {
   color: #0066ff;
   text-decoration: none;
 }
