@@ -366,6 +366,11 @@ div h1, div h3 {
   text-align: justify;
 }
 
+#contact{
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+
 p {
   margin: 15px;
   padding: 10px;
@@ -431,10 +436,6 @@ iframe {
 .contblueword {
   font-size: 2em;
   color: #0066ff;
-}
-
-#contact{
-  margin-left: 240px;
 }
 
 /* -----------bas gauche*/
