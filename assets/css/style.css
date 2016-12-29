@@ -50,7 +50,7 @@ flex-direction: column;
 
 }
 
-/*-------declaration du lien ouverture menu retractable*/
+/*-------declaration du lien ouverture "label" menu retractable*/
 
 #menu + label::before {
   content:"\f0c9 ";
@@ -71,7 +71,7 @@ flex-direction: column;
   transition:top 1s;
 
 }
-/*-------declaration du lien fermeture du menu retractable*/
+/*-------declaration du lien fermeture "label" du menu retractable*/
 
 #menu:checked + label::before {
   content:"\f00d";
@@ -236,6 +236,10 @@ label {
   padding: 0;
 }
 
+#divmaincv iframe {
+  margin-left: 15px;
+}
+
 /*---------menu du milieu page "j'ai fait"*/
 
 .navmid {
@@ -315,7 +319,7 @@ label {
   color: white;
 }
 
-#navmidmd a:hover {
+#navmidmd a:hover, #contact a:hover {
   color: red;
 }
 
@@ -369,6 +373,10 @@ div h1, div h3 {
 #contact{
   margin-left: 240px;
   margin-bottom: 100px;
+}
+
+#contact a {
+  color: inherit;
 }
 
 p {
