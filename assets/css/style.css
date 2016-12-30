@@ -144,7 +144,7 @@ label {
 /*-------declaration des couleurs du background menu retractable*/
 
 
-#navmain1dx {
+#navmainndx {
   background-color: red;
 }
 
@@ -180,7 +180,7 @@ label {
 
 /*-------declaration des couleurs de liens menu retractable lorsque l'on passe dessus*/
 
-#navmain1dx a:hover, #navmainabout a:hover, #navmaincv a:hover {
+#navmainndx a:hover, #navmainabout a:hover, #navmaincv a:hover {
   color: black;
   font-size: 2em;
 }
@@ -437,6 +437,7 @@ iframe {
 
 .bigwhiteword a:hover {
   color: red;
+  text-decoration: none;
 }
 
 /*--------declaration des classes icones*/
@@ -454,6 +455,11 @@ iframe {
 .contblueword {
   font-size: 2em;
   color: #0066ff;
+}
+
+.contblueword:hover {
+  font-size: 2em;
+  color: red;
 }
 
 /* -----------bas gauche*/
