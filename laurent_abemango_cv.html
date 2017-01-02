@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
   <!-- Liaison Bootstrap -->
   <link href="assets/vendor/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <!-- Liaison media queries-->
-  <link href="assets/css/mediastyle.css" rel="stylesheet" media="screen" type="text/css" />
+  <!-- <link href="assets/css/mediastyle.css" rel="stylesheet" media="screen" type="text/css" /> -->
   <!-- Liaison fontAwsome -->
   <link href="assets/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Liaison de ma feuille de style -->
@@ -36,22 +36,17 @@
   <!-- fin menu rétractable -->
   <!-- déclaration du header et des banners à l'intérieur-->
   <header class="topheader">
-    <section id="hbanner">
-      <a href="index.html"><img src="assets/images/laurent_abemango_banner_blk_e-cv700.png" alt="LAURENT ABEMANGO e-CV BANNER" title="LAURENT ABEMANGO : WEB DEV."/></a>
-    </section>
-    <section id="hbanner2">
-      <img src="assets/images/laurent_abemango_class_ban_curriculum.png" alt="LAURENT ABEMANGO C-V" title="LAURENT ABEMANGO : WEB DSGN.3.0"/>
-    </section>
-    <!-- fin de la section -->
+    <a href="index.html"><img src="assets/images/laurent_abemango_banner_blk_e-cv700.png" alt="LAURENT ABEMANGO e-CV BANNER" title="LAURENT ABEMANGO : WEB DEV." id="hbanner"/></a>
+    <img src="assets/images/laurent_abemango_class_ban_curriculum.png" alt="LAURENT ABEMANGO e-CV: JE SUIS" title="LAURENT ABEMANGO : WEB DEF.3.0" id="hbanner2"/>
   </header>
   <!-- fin du Header et début du Main -->
   <main class="main">
-    <section class="mainsect">
+    <div class="mainsect">
       <div class="divmain" id="divmaincv">
-        <a href="assets/vendor/pdf/ABEMANGO_CV-2016.pdf" title="Cliquez pour télécharger mon cv" target="_blank"><h1 class="ikonblu"><i class="fa fa-id-card" aria-hidden="true"></i></h1></a>
-        <iframe src="assets/vendor/pdf/ABEMANGO_CV-2016.pdf" width="810px" height="1100px"></iframe>
+        <a href="assets/vendor/pdf/ABEMANGO_CV-2016.pdf" title="Cliquez pour télécharger mon cv" target="_blank"><p class="ikonblu"><i class="fa fa-id-card" aria-hidden="true"></i>C.V.</p></a>
+        <iframe src="assets/vendor/pdf/ABEMANGO_CV-2016.pdf" width="810" height="1100"></iframe>
       </div>
-    </section>
+    </div>
   </main>
   <!-- fin du Main et début bas gauche -->
   <aside class="bagosh" id="bgcv">
