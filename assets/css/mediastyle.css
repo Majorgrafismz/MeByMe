@@ -1,76 +1,190 @@
 /*Query pour phones et tablets*/
-@media screen (max-width: 992px){
+@media screen and (max-width: 992px) {
+
   .topheader {
-    display: flex;
-    /*position: absolute;*/
-    width: auto;
-    border: 0;
+
+    border-bottom: 20px solid black;
+    padding: 10px;
+    height: 280px;
+  }
+
+  #hbanner {
+    position: relative;
+    width: 90%;
+    top: 20px;
     left: 0;
-    margin: 15px;
-    order: 0;
+  }
+
+  #hbanner2 {
+    position: relative;
+    width: 90%;
+    top: 40px;
+    left: 0;
+    margin: 0;
+    padding-left: 40px;
+  }
+
+
+  .navmain{
+    position: fixed;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: auto;
+    border-bottom: 20px solid black;
+  }
+
+  #menu + label::before{
+    font-size: 2em;
+    margin: 0;
+    width: 40px;
+    height: auto;
+    text-align: left;
+  }
+
+  #menu:checked + label::before{
+    top: 36%;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .navmid {
+    position: fixed;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    border: 0;
+    z-index: 7;
+  }
+
+  #navmidwrk {
+    left: 0;
+    width: 100%;
 
   }
-  .main {
-    display: block;
+
+  .mainsect {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .divmain {
     position: relative;
-    width: auto;
+    width: 100%;
     border: 0;
     left: 0;
-    margin: 15px;
-    order: 1;
+    margin: 0;
+
   }
-  section {
-    display: block;
+
+  #jesuis {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+    margin: 10px;
+  }
+
+  .bagosh {
     position: relative;
-    width: auto;
+    width: 100%;
+    height: 70%;
     border: 0;
-    left: 0;
-    margin: 15px;
-    order: 1;
+    top: 250px;
+    margin-top: 20px;
+    border-top: 20px solid black;
   }
-  div {
+  .lalogo {
+    top: 10px
     width: auto;
+    height: auto;
   }
+  .right {
+    display: none;
+  }
+
   p {
     width: auto;
-      background-color: black;
+    margin: 10px;
   }
   .lafoto {
-    width: auto;
+    width: 100%;
+    max-width: 50%;
   }
   .navmid {
     width: auto;
-
   }
 }
 
 
-@media screen (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1200px){
 
-  header {
-    width: 50%;
+  .navmain{
+    position: fixed;
+    left: 0;
+    border-bottom: 20px solid black;
+  }
 
+  #menu + label::before{
+    font-size: 3em;
+    margin: 0;
+    width: 40px;
+    height: auto;
+    text-align: left;
   }
-  main {
-    width: auto;
+
+  #menu:checked + label::before{
+    top: 55%;
+    font-size: 3em;
+    margin: 0;
   }
-  section {
-    width: auto;
+
+  #hbanner {
+    position: relative;
+    width: 90%;
+    top: 20px;
+    left: 0;
   }
-  div {
-    width: auto;
+
+  #hbanner2 {
+    position: relative;
+    width: 90%;
+    top: 40px;
+    left: 0;
+    margin: 0;
+    padding-left: 40px;
   }
+
   p {
     width: auto;
+    margin: 10px;
   }
-  .lafoto {
+
+  .bagosh {
+    position: fixed;
+    top: 350px;
+    left: 0;
+    border-top: 20px;
+  }
+
+  .lalogo {
+    top: 70px;
     width: auto;
+    height: auto;
   }
+
+  .right {
+    display: none;
+  }
+
   .navmid {
     width: auto;
-
   }
 }
-@media screen (min-width: 1200px){
+/*@media screen and (min-width: 1200px){
 
-}
+}*/
